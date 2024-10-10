@@ -1,0 +1,113 @@
+.Nav_wrapper{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding:  0 15%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background-color: wheat;
+}
+.Nav_wrapper .logo a{
+    font-size: 28px;
+    color: gray;
+    font-weight: 600;
+}
+.Nav_wrapper ul li{
+display: inline-block;
+margin: 0 15px;
+}
+.Nav_wrapper ul li a{
+    color: rgb(126, 13, 233);
+}
+.Nav_wrapper ul li:hover a{
+    color: red;
+
+}
+.nav_btns{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+#bars{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(4, 39, 104);
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: inset 4px 4px 4px rgba(255, 255, 255, 0.4);
+    border-radius: 3px;
+
+    transition: .6s;
+    display: none;
+}
+#bars:active{
+    transform: scale(0.9);
+    box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0.3);
+}
+
+
+@media screen and (max-width:1200px){
+    #bars{
+        display: flex;
+    }
+    .Nav_wrapper ul{
+       position: absolute; 
+       top: 100%;
+       width: 100%;
+       background-color:burlywood ;
+       transition: .6s;
+       left: -100%;
+    }
+    .Nav_wrapper .showNav{
+        left: 0%;
+    }
+    .Nav_wrapper ul li {
+        display: block;
+        padding: 25px 0;
+        padding-left: 15%;
+        border-bottom: 0.2px solid rebeccapurple;
+    }
+    .Nav_wrapper ul li a{
+        color: wheat;
+    }
+}
+@media screen and (max-width:500px) {
+    .nav_btns button{
+display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
